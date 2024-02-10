@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>File Viewer</h1>
+    <form action="/file_view" method="GET">
+        <label for="filename">Select a text file:</label><br>
+        <select id="filename" name="filename">
+            <option value="file1.txt">file1.txt</option>
+            <option value="file2.txt">file2.txt</option>
+            <option value="file3.txt">file3.txt</option>
+            <option value="file4.txt">file4.txt</option>
+        </select><br>
+        <label for="start_line">Start Line:</label>
+        <input type="number" id="start_line" name="start_line" value="1"><br>
+        <label for="end_line">End Line:</label>
+        <input type="number" id="end_line" name="end_line" value="-1"><br>
+        <input type="submit" value="View">
+    </form>
+</body>
+</html>
